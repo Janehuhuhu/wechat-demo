@@ -1,11 +1,12 @@
 // pages/user/index.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    time: app.globalData.time
   },
 
   /**

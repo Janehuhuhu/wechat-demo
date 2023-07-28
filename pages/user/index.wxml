@@ -1,2 +1,21 @@
 <!--pages/user/index.wxml-->
-<text>我的</text>
+<view>
+  <text style="display: block;">{{time}}
+  </text>
+  <image src="https://picsum.photos/200" style="height: 375rpx; width: 375rpx;">
+  </image>
+  <swiper
+      indicator-dots="{{true}}"  
+      autoplay="{{true}}"
+      style="width: 750rpx;">
+      <swiper-item>
+        <image src="https://picsum.photos/200"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://picsum.photos/250"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://picsum.photos/300"></image>
+      </swiper-item>
+  </swiper>
+</view>

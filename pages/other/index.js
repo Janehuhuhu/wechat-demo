@@ -1,21 +1,11 @@
-// pages/home/index.js
+// pages/other/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    msg: 'hello world!'
-  },
 
-  handleTap() {
-    this.setData({
-      msg: 'my world'
-    }, function() {
-      wx.showToast({
-        title: 'title',
-      })
-    })
   },
 
   /**

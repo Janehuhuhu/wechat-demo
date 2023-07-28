@@ -1,7 +1,4 @@
-/* pages/user/index.wxss */
-text {
-  color: blueviolet;
-}
+/* pages/api/index.wxss */
 
 page {
   height: 100%;

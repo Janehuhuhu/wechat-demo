@@ -1,2 +1,12 @@
 <!--pages/home/index.wxml-->
-<text>hello world</text>
+<view>
+  <text class="title">{{msg}}</text>
+  <button type="primary" bind:tap="handleTap">基础按钮</button>
+  <button loading>基础按钮</button>
+  <button class="weui-btn weui-btn_primary">
+    主操作
+  </button>
+  <button class="weui-btn weui-btn_primary weui-btn_loading">
+    <i class="weui-loading"></i>正在加载
+  </button>
+</view>

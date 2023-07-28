@@ -1,0 +1,36 @@
+<!--pages/api/index.wxml-->
+<view>
+  <text wx:for="{{items}}">
+    {{index}}、{{item}}
+  </text>
+  <view style="margin: 30rpx 0rpx;">
+    <input placeholder="请输入" bind:input="handleInput" />
+  </view>
+  <button type="primary" size="mini" bind:tap="add" style="margin-right: 30rpx;">添加</button>
+  <button type="primary" size="mini" bind:tap="remove">清空</button>
+
+  <view style="text-align: center;">
+    <text>展示用户信息</text>
+    <view style="width: 375rpx;">
+      <open-data style="width: 50%" type="userAvatarUrl"></open-data>
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+
+  <view style="text-align: center;">
+    <text>获取用户个人信息</text>
+    {{name}}
+    <button open-type="getUserInfo" bind:getuserinfo="handleGetUserInfo">
+    授权获取用户个人信息
+  </button>
+  </view>
+
+  <view style="text-align: center;">
+    <text>页面跳转</text>
+    <view>
+    <button type="primary" size="mini" bind:tap="back">
+    跳转到首页
+    </button>
+  </view>
+  </view>
+</view>

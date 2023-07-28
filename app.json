@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/api/index",
+    "pages/other/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff0000",
@@ -21,6 +23,12 @@
         "pagePath": "pages/user/index",
         "iconPath": "pages/user/index.png",
         "selectedIconPath": "pages/user/index.png"
+      },
+      {
+        "text": "api",
+        "pagePath": "pages/api/index",
+        "iconPath": "pages/api/index.png",
+        "selectedIconPath": "pages/api/index.png"
       }
     ]
   }
