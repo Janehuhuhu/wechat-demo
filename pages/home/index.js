@@ -5,24 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-    msg: 'hello world!'
+    swiperList: [],
+    categoryList: []
   },
-
-  handleTap() {
-    this.setData({
-      msg: 'my world'
-    }, function() {
-      wx.showToast({
-        title: 'title',
-      })
+  // 获取轮播图数据列表
+  getSwiperList() {
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/slides',
+      method: 'GET',
+      success: (res) => {
+        this.setData({
+          swiperList: res.data
+        })
+      }
     })
   },
+
+  // 获取九宫格数据列表
+  getCategoryList() {
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/categories',
+      method: 'GET',
+      success: (res) => {
+        this.setData({
+          categoryList: res.data
+        })
+      }
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.getSwiperList()
+    this.getCategoryList()
   },
 
   /**
