@@ -6,10 +6,10 @@
 </swiper>
 
 <view class="grid-list">
-  <view class="grid-item" wx:for="{{categoryList}}" wx:key="id">
+  <navigator url="/pages/shopList/shopList?id={{item.id}}&&name={{item.name}}" class="grid-item" wx:for="{{categoryList}}" wx:key="id">
     <image src="{{item.icon}}"></image>
     <text>{{item.name}}</text>
-  </view>
+  </navigator>
 </view>
 
 <view class="img-box">

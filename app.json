@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/index",
     "pages/message/index",
-    "pages/concact/index"
+    "pages/concact/index",
+    "pages/shopList/shopList"
   ],
   "window": {
     "navigationBarBackgroundColor": "#2b4b6b",
