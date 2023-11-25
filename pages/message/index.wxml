@@ -1,2 +1,6 @@
 <!--pages/other/index.wxml-->
-<text>pages/other/index.wxml</text>
+<view class="container">
+  <van-button type="primary" bindtap="send">发送消息</van-button>
+  <text>{{sum}}</text>
+</view>
+

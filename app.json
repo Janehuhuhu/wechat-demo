@@ -1,4 +1,9 @@
 {
+  "usingComponents": {
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-button": "@vant/weapp/button/index"
+  },
   "pages": [
     "pages/home/index",
     "pages/message/index",
@@ -11,6 +16,7 @@
     "navigationBarTitleText": "本地生活"  
   },
   "tabBar": {
+    "custom": true,
     "list": [
       {
         "text": "首页",

@@ -1,4 +1,6 @@
 // pages/other/index.js
+import {createStoreBindings} from 'mobx-miniprogram-bindings'
+import {store} from '../../store/store'
 Page({
 
   /**
@@ -8,11 +10,19 @@ Page({
 
   },
 
+  send() {
+    this.updateSum()
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.storeBinds = createStoreBindings(this, {
+      store,
+      fields: ['sum'],
+      actions: ['updateSum']
+    })
   },
 
   /**
@@ -40,7 +50,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    this.storeBinds.destroyStoreBindings()
   },
 
   /**

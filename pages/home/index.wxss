@@ -35,7 +35,7 @@ swiper image {
 .img-box {
   display: flex;
   justify-content: space-around;
-  padding: 10rpx 0;
+  padding: 10rpx 0 120rpx;
 }
 
 .img-box image {
